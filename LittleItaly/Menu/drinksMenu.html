@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/LittleItaly/restaurantStyles.css">
+    <title>Little Italy</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="drinksMenu/Menu">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/LittleItaly/index.html">Little Italy</a>
+    
+    <!-- Hamburger menu button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+        <ul class="nav nav-pills ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/contactUs.php">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Food</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/pizzaMenu.html">Pizza</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/pastaMenu.html">Pasta</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/dessertMenu.html">Dessert</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Drinks</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/drinksMenu.html#drinkMenu">Alcoholic</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/drinksMenu.html#nonalcoholic">Non-Alcoholic</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/restaurantReservation.php">Reservation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/restaurantMenu.php">Order</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="drinkMenu">
+    <div class="drinkInformationA">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="/LittleItaly/images/drink/drink2.jpg" alt="Bottles of wine" id="drinkA">
+                <!--https://unsplash.com/photos/white-labeled-bottles-x5O1GmmGoPE-->
+            </div>
+            <div class="col-sm-6">
+                <table class="restaurantMainDrA">
+                <tr>
+                    <th colspan="2">Alcoholic</th>
+                </tr>
+                <tr>
+                    <td colspan="2" id="aMenuDesc">Explore our curated selection of Italian alcoholic delights, from renowned wines to classic spirits, each offering a unique taste of Italy's rich beverage culture.</td>
+                </tr>
+                <tr><th colspan="2">Wine</th></tr>
+                    <tr><td>Chianti Classico</td>
+                        <td>Traditional Italian red wine from Tuscany.</td>
+                    </tr>
+                    <tr><td>Pinot Grigio</td>
+                        <td>Light and crisp white wine, perfect for seafood.</td>
+                    </tr>
+                    <tr><td>Barolo</td>
+                        <td>Full-bodied red wine known as the "King of Wines".</td>
+                    </tr>
+                    <tr><td>Prosecco</td>
+                        <td>Italian sparkling wine, great for celebrations.</td>
+                    </tr>
+                    <tr class="section-gap"><td></td></tr>
+                <tr><th colspan="2">Italian Spirits</th></tr>
+                    <tr><td>Aperol Spritz</td>
+                        <td>Aperol, Prosecco, and soda water - a refreshing aperitif.</td>
+                    </tr>
+                    <tr><td>Negroni</td>
+                        <td>Gin, Campari, and sweet vermouth - a classic Italian cocktail.</td>
+                    </tr>
+                    <tr><td>Limoncello</td>
+                        <td>Sweet and tangy lemon liqueur, perfect as a digestif.</td>
+                    </tr>
+                    <tr><td>Grappa</td>
+                        <td>Italian grape-based brandy, enjoyed after a meal.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="nonalcoholic">
+<div class="drinkInformationN">
+        <div class="row">
+            <div class="col-sm-6">
+                <table class="restaurantMainDrN">
+                <tr>
+                    <th colspan="2">Non-Alcoholic</th>
+                </tr>
+                <tr>
+                    <td colspan="2" id="nMenuDesc">Enjoy our variety of non-alcoholic offerings, perfect for a refreshing break at any time of the day. Choose from our classic hot brews or our cool and invigorating cold drinks.</td>
+                </tr>
+                <tr><th colspan="2">Hot</th></tr>
+                    <tr><td>espresso</td>
+                        <td>Strong and concentrated Italian coffee.</td>
+                    </tr>
+                    <tr><td>cappuccino</td>
+                        <td>Espresso with steamed milk and frothed milk.</td>
+                    </tr>
+                    <tr><td>caffè latte</td>
+                        <td>Espresso with steamed milk.</td>
+                    </tr>
+                    <tr><td>macchiato</td>
+                        <td>Espresso "stained" with frothed milk.</td>
+                    </tr>
+                    <tr class="section-gap"><td></td></tr>
+                <tr><th colspan="2">Cold</th></tr>
+                    <tr><td>caffè freddo</td>
+                        <td>Chilled espresso served over ice.</td>
+                    </tr>
+                    <tr><td>limonata</td>
+                        <td>Homemade lemonade with fresh lemon juice.</td>
+                    </tr>
+                    <tr><td>aranciata</td>
+                        <td>Carbonated orange soda.</td>
+                    </tr>
+                    <tr><td>gazosa</td>
+                        <td>Carbonated lemon-lime soda.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <img src="/LittleItaly/images/drink/drink4.jpg" alt="Espresso brewing into cup" id="drinkN"> 
+                <!--https://unsplash.com/photos/white-ceramic-cup-on-brown-wooden-table-KWZ-rg9o76A-->
+
+            </div>
+        </div>
+</div>
+</div>
+
+</body>
+</html>
+

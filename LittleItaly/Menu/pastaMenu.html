@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/LittleItaly/restaurantStyles.css">
+    <title>Little Italy</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="pastaMenu">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/LittleItaly/index.html">Little Italy</a>
+    
+    <!-- Hamburger menu button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+        <ul class="nav nav-pills ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/contactUs.php">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Food</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/pizzaMenu.html">Pizza</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/pastaMenu.html">Pasta</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/dessertMenu.html">Dessert</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Drinks</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/drinksMenu.html#drinkMenu">Alcoholic</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/drinksMenu.html#nonalcoholic">Non-Alcoholic</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/restaurantReservation.php">Reservation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/restaurantMenu.php">Order</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="overlay-content-pasta">
+    <table class="restaurantMainPaMenu">
+    <tr>
+        <th colspan="3">Pasta</th>
+    </tr>
+    <tr>
+        <td colspan="3" id="pastaMenuDesc">All pastas are served with garlic bread and house salad</td>
+    </tr> 
+    <tr><td>Spaghetti Carbonara</td>
+        <td>A classic Roman pasta dish made with eggs, cheese, pancetta, and black pepper.</td>
+        <td>$22.99</td>
+    </tr>
+    <tr><td>Lasagna Bolognese</td>
+        <td>Layers of pasta, rich Bolognese sauce, béchamel, and cheese, baked to perfection.</td>
+        <td>$27.99</td>
+    </tr>
+    <tr><td>Penne alla Vodka</td>
+        <td>Penne pasta in a creamy tomato and vodka sauce, often with a touch of chili pepper.</td>
+        <td>$22.99</td>
+    </tr>
+    <tr><td>Gnocchi al Pesto</td>
+        <td>Pillowy potato dumplings served with a fresh basil pesto sauce and grated Parmesan.</td>
+        <td>$24.99</td>
+    </tr>
+    </table>
+</div>
+
+</body>
+</html>
+

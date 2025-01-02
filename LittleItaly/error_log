@@ -1,0 +1,67 @@
+[23-Sep-2024 17:38:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /data0/smcurrie.com/public_html/LittleItaly/contactDB.php on line 11
+[23-Sep-2024 13:38:09 America/Toronto] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data0/smcurrie.com/public_html/LittleItaly/contactDB.php:1) in /data0/smcurrie.com/public_html/LittleItaly/contactDB.php on line 56
+[23-Sep-2024 17:46:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:60
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 60
+[23-Sep-2024 17:49:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:60
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 60
+[23-Sep-2024 17:50:45 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:60
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 60
+[23-Sep-2024 17:51:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:61
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 61
+[23-Sep-2024 17:55:22 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:61
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 61
+[23-Sep-2024 17:55:30 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:61
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 61
+[23-Sep-2024 17:58:34 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:61
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 61
+[23-Sep-2024 17:59:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:61
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 61
+[23-Sep-2024 18:08:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:61
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 61
+[23-Sep-2024 18:23:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:66
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 66
+[23-Sep-2024 18:25:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:66
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 66
+[23-Sep-2024 18:25:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DBHOST" in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php:66
+Stack trace:
+#0 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/contactConfirmation.php on line 66
+[23-Sep-2024 18:39:34 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /data0/smcurrie.com/public_html/LittleItaly/orderConfirmation.php on line 58
+[23-Sep-2024 18:51:11 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /data0/smcurrie.com/public_html/LittleItaly/orderConfirmation.php on line 58
+[23-Sep-2024 15:58:23 America/Toronto] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php:75
+Stack trace:
+#0 /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php(75): mysqli->close()
+#1 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php on line 75
+[23-Sep-2024 16:28:52 America/Toronto] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php:75
+Stack trace:
+#0 /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php(75): mysqli->close()
+#1 {main}
+  thrown in /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php on line 75
+[23-Sep-2024 17:18:06 America/Toronto] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php on line 45
+[23-Sep-2024 17:18:06 America/Toronto] PHP Warning:  Cannot modify header information - headers already sent by (output started at /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php:45) in /data0/smcurrie.com/public_html/LittleItaly/reservationDB.php on line 59
+[24-Sep-2024 14:36:50 UTC] PHP Parse error:  syntax error, unexpected identifier "error" in /data0/smcurrie.com/public_html/LittleItaly/contactDB.php on line 46
+[24-Sep-2024 18:35:45 UTC] PHP Parse error:  syntax error, unexpected token "--" in /data0/smcurrie.com/public_html/LittleItaly/restaurantReservation.php on line 83
+[24-Sep-2024 18:38:39 UTC] PHP Parse error:  syntax error, unexpected token "--" in /data0/smcurrie.com/public_html/LittleItaly/restaurantReservation.php on line 83

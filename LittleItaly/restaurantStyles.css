@@ -1,0 +1,572 @@
+/* Ensures that the HTML element takes up full viewport height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* Resets font size and sets a solid background color */
+html {
+  font-size: 16px;
+  background-color: #FFFFFF;
+}
+/* Style navbar */
+.navbar.navbar-light.bg-light {
+  background-color: #1F2F16 !important;
+  padding-bottom: 2%;
+  margin-bottom: 0;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Add this rule to push the content below the navbar */
+body {
+  padding-top: 100px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Style title in navbar */
+.navbar.navbar-light.bg-light .navbar-brand {
+  color: #E2DADB !important;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 30px;
+}
+/* Style navbar links */
+.navbar.navbar-light.bg-light .nav-link {
+  color: #E2DADB !important;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+.navbar.navbar-light.bg-light .nav-link:hover {
+  background-color: #365226;
+  color: #E2DADB !important;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+/*Style menu dropdown menu */
+.dropdown-item.indented a {
+  padding-left: 20px !important;
+  text-decoration-line: none;
+  color: #000000;
+}
+/* Style for the navbar-toggler button */
+.navbar-toggler {
+    background-color: #A37C40 !important;
+    color: #1F2F16;
+}
+/* Style restaurantMain */
+body.restaurantMain {
+  padding-top: 70px;
+  background-color: #E2DADB !important;
+  color: #00ABE4 !important;
+}
+footer.restaurantMain {
+  background-color: #92140C;
+  color: #A37C40;
+  text-align: right;
+  padding-right: 1%;
+}
+/* Style Jumbotron */
+.jumbotron.text-center h1 {
+  background-color: #365226 !important;
+  color: #A37C40 !important;
+  font-size: 2.25em;
+  font-weight: bold;
+  border-bottom: none !important;
+  padding-top: 3%;
+}
+.jumbotron.text-center p {
+  background-color: #365226 !important;
+  color: #E2DADB !important;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-top: none !important;
+  padding-bottom: 3%;
+}
+.jumbotron.text-center h1,
+.jumbotron.text-center p {
+  box-shadow: none !important;
+  outline: none !important;
+  margin-bottom: 0 !important;  
+}
+/* Style Review Row */
+.restaurantReviews {
+  background-color: #E2DADB;
+}
+#review-image-change {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+#review-text-change {
+  font-size: 1.2em;
+  padding-top: 30%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  color: #92140C;
+  background-color: #E2DADB;
+}
+#review-text-change, #review-image-change {
+  transition: opacity 3s;
+}
+/*Style Menu Row*/
+.restaurantMainMenu .col-sm-3 {
+  background-color: #E2DADB;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.restaurantMainMenu .col-sm-3:hover {
+  background-color: #1F2F16;
+  color: #A37C40;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+a.restaurantMainPzMenu,
+a.restaurantMainDrMenu,
+a.restaurantMainPaMenu,
+a.restaurantMainDeMenu {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #92140C;
+  font-size: 1.4em;
+}
+/* Style Information */
+.restaurantInformation {
+  padding-top: 5%;
+  padding-bottom: 8%;
+  background-color: #92140C;
+}
+/* Style Hours of Operation */
+h4.restaurantMainHoO {
+  text-align: center;
+  color: #A37C40;
+  padding-top: 8%;
+}
+table.restaurantMainHoO {
+  color: #A37C40;
+  width: 70%;
+  margin: 0 auto; 
+  font-weight: bold;
+}
+table.restaurantMainHoO th {
+  border: none;
+  padding: 4px;
+  text-align: center;
+  font-size: 1em;
+} 
+table.restaurantMainHoO td {
+  border: none;
+  padding: 4px;
+  text-align: center;
+  font-size: 0.8em;
+}
+/* Style Contact Us */
+a.btn.contactUsForm {
+  padding-top: 20%;
+  color: #A37C40;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+a.btn.contactUsForm:hover {
+  padding-top: 20%;
+  color: #E2DADB;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+table.restaurantMainCU {
+  color: #A37C40;
+  width: 50%;
+  margin: 0 auto; 
+  font-size: 1em;
+}
+table.restaurantMainCU th, 
+table.restaurantMainCU td {
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+/* Style restaurantReservation */
+body.restaurantReservation {
+  padding-top: 10%;
+  background-color: #E2DADB !important;
+  color: #00ABE4 !important;
+}
+#restaurantRes {
+  background-color: #E2DADB !important;
+  padding: 5%;
+}
+body.restaurantReservation h1 {
+  text-align: center;
+  color: #A37C40;
+}
+form.restaurantReservation {
+  background-color: #92140C;
+  color: #A37C40;
+  width: 100%;  
+  font-size: 0.8em; 
+  font-weight: bold; 
+  margin: 0 auto;
+  border: 2px solid #1F2F16;
+  padding: 25px;
+}
+fieldset.restaurantReservation {
+  width: 100%;  
+  font-size: 0.8em;  
+  margin: 0 auto;  
+  padding: 20px;
+}
+/* Adjust padding and margins around form elements for reservation form */
+.form-group {
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 8px 12px; 
+  margin-top: 4px;  
+  width: 100%;
+}
+/* Adjust the buttons */
+button[type="submit"], 
+button[type="button"] {
+  padding: 8px 16px; 
+  margin-right: 10px; 
+  margin-top: 10px;
+}
+button[name="submit"],
+#closeButton,
+#submit{
+  background-color: #E2DADB;
+  border: 2px solid #1F2F16;
+  color: #365226;
+  font-size: 0.8em;
+}
+/* Maximum width to ensure reservation form doesn't get too wide on very large screens */
+form, fieldset {
+  max-width: 400px; 
+}
+/* Style restaurantConfirmation */
+body.reservationConfirmation {
+  padding-top: 15%;
+  background-color: #E2DADB !important;
+  color: #A37C40 !important;
+}
+body.reservationConfirmation h1 {
+  padding-top: 2%;
+  text-align: center;
+  font-size: 2.4em;
+  color: #A37C40;
+}
+fieldset.reservationConfirmation {
+  background-color: #92140C;
+  color: #A37C40;
+  width: 100%;  
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px solid #1F2F16;
+}
+/* Style pizzaMenu */
+body.pizzaMenu {
+  background: #FFFFFF center/cover url("/LittleItaly/images/pizza/pizza5.jpg") no-repeat;
+  /* https://unsplash.com/photos/selective-focus-photography-of-two-pizzas-exSEmuA7R7k */
+}
+.overlay-content-pizza {
+  position: relative;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table.restaurantMainPzMenu {
+  color: #A37C40;
+  font-weight: bold;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 0.8em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#pizzaMenuDesc {
+  font-size: 0.8em;
+  text-align: center;
+}
+table.restaurantMainPzMenu th {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+table.restaurantMainPzMenu td {
+  padding: 10px;
+}
+/* Style Pasta Menu */
+body.pastaMenu {
+  background: #FFFFFF center/cover url("/LittleItaly/images/pasta/pasta1.jpg") no-repeat;
+  /* https://unsplash.com/photos/potato-fries-on-white-ceramic-plate-flFd8L7_B3g */
+}
+.overlay-content-pasta {
+  position: relative;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table.restaurantMainPaMenu {
+  color: #A37C40;
+  font-weight: bold;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 0.8em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#pastaMenuDesc {
+  font-size: 0.8em;
+  text-align: center;
+}
+table.restaurantMainPaMenu th {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+table.restaurantMainPaMenu td {
+  padding: 10px;
+}
+/* Style Dessert Menu */
+body.dessertMenu {
+  background: #FFFFFF center/cover url("/LittleItaly/images/dessert/dessert1.jpg") no-repeat;
+  /* https://unsplash.com/photos/white-ice-cream-on-brown-cookie-idTwDKt2j2o */
+}
+.overlay-content-dessert {
+  position: relative;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dessertMenuDesc {
+  font-size: 0.8em;
+  text-align: center;
+}
+table.restaurantMainDeMenu {
+  color: #A37C40;
+  font-weight: bold;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 0.8em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+table.restaurantMainDeMenu th {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+table.restaurantMainDeMenu td {
+  padding: 10px;
+}
+/* Style Drink Menu */
+.drinkInformationA {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: #E2DADB;
+}
+.drinkInformationN {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #92140C;
+}
+/* Style Alcoholic */
+#drinkA {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5%;
+}
+table.restaurantMainDrA {
+  color: #A37C40;
+  width: 70%;
+  margin: 0 auto; 
+  font-size: 0.8em;
+}
+#aMenuDesc {
+  font-size: 0.8em;
+  text-align: center;
+}
+table.restaurantMainDrA th {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 5%;
+}
+table.restaurantMainDrA td {
+  text-align: right;
+  padding: 1%;
+}
+.restaurantMainDrA tr.section-gap {
+    height: 15px; 
+  }
+/* Style Non-Alcoholic */
+#drinkN {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5%;
+}
+table.restaurantMainDrN {
+  color: #A37C40;
+  width: 70%;
+  margin: 0 auto; 
+  font-size: 0.8em;
+}
+#nMenuDesc {
+  font-size: 0.8em;
+  text-align: center;
+}
+table.restaurantMainDrN th {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 5%;
+}
+table.restaurantMainDrN td {
+  text-align: right;
+  padding: 1%;
+}
+.restaurantMainDrN tr.section-gap {
+    height: 15px;
+}
+/* Style restaurantMenu */
+body.restaurantMenu {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  background-color: #E2DADB !important;
+  color: #00ABE4 !important;
+}
+#restaurantRes {
+  background-color: #E2DADB !important;
+  padding: 5%;
+}
+body.restaurantMenu h1 {
+  text-align: center;
+  color: #A37C40;
+  padding: 3%;
+  font-size: 1.8em;
+}
+form.restaurantMenu {
+  background-color: #92140C;
+  color: #A37C40;
+  width: 100%; 
+  font-size: 0.8em; 
+  font-weight: bold; 
+  margin: 0 auto;
+  border: 2px solid #1F2F16;
+  padding: 2%;
+}
+fieldset.restaurantMenu {
+  width: 100%;
+  font-size: 0.8em;  
+  margin: 0 auto;  
+  padding: 2%;
+}
+#wrap {
+  background-color: #92140C;
+  color: #A37C40;
+  width: 50%;
+  max-width: 400px;
+  font-size: 0.8em; 
+  font-weight: bold; 
+  margin: 0 auto;
+  border: 2px solid #1F2F16;
+  padding: 1%;
+  text-align: left;
+  line-height: 1.5em;
+}
+/* Style for the checkbox label and quantity input */
+.checkboxlabel {
+  display: flex;
+  align-items: left;
+  margin-bottom: 2%;
+  font-size: 1em;
+}
+/* Style for the checkboxes */
+.checkboxlabel input[type="checkbox"] {
+  margin-right: 5%;
+}
+input.quantity {
+  margin-left: auto;
+  width: 40%; 
+  padding: 2%;
+  font-size: 1em;
+}
+#totalPrice {
+  font-size: 2em;
+}
+/* Style contactUs */
+body.contactUs {
+  padding-top: 10%;
+  background-color: #E2DADB !important;
+  color: #00ABE4 !important;
+}
+body.contactUs h1 {
+  text-align: center;
+  color: #A37C40;
+}
+form.contactUs {
+  background-color: #92140C;
+  color: #A37C40;
+  width: 100%;  
+  font-size: 0.8em; 
+  font-weight: bold; 
+  margin: 0 auto;
+  border: 2px solid #1F2F16;
+  padding: 25px;
+}
+fieldset.contactUs {
+  width: 100%;  
+  font-size: 0.8em;  
+  margin: 0 auto;  
+  padding: 20px;
+}
+/* Style contactConfirmation */
+body.contactConfirmation {
+  padding-top: 15%;
+  background-color: #E2DADB !important;
+  color: #A37C40 !important;
+}
+body.contactConfirmation h1 {
+  padding-top: 2%;
+  text-align: center;
+  font-size: 2.4em;
+  color: #A37C40;
+}
+fieldset.contactConfirmation {
+  background-color: #92140C;
+  color: #A37C40;
+  width: 100%;  
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px solid #1F2F16;
+}
+/* Add uniform width to all inputs in the contact information section */
+.con_info input[type="text"],
+.con_info input[type="email"],
+.con_info input[type="number"] {
+    width: 100%; /* Make all inputs take up full width */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    padding: 8px; /* Add padding for better appearance */
+    margin-bottom: 10px; /* Add space between inputs */
+    font-size: 1em; /* Ensure consistent font size */
+}

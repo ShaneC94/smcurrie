@@ -1,0 +1,138 @@
+<!--
+    The header and jumbotron HTML and CSS was written based off of the code that Shane Currie wrote while working on
+    Lab 2 of web programming. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/LittleItaly/restaurantStyles.css">
+    <title>Little Italy</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="reviewscripts.js"></script>
+</head>
+
+<body class="restaurantMain">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/LittleItaly/index.html">Little Italy</a>
+    
+    <!-- Hamburger menu button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+        <ul class="nav nav-pills ms-auto">
+            <!--<li class="nav-item">-->
+            <!--    <a class="nav-link" href="https://smcurrie.com/">Portfolio</a>-->
+            <!--</li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/contactUs.php">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Food</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/pizzaMenu.html">Pizza</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/pastaMenu.html">Pasta</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/dessertMenu.html">Dessert</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Drinks</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/drinksMenu.html#drinkMenu">Alcoholic</a></li>
+                    <li class="dropdown-item indented"><a href="/LittleItaly/Menu/drinksMenu.html#nonalcoholic">Non-Alcoholic</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/restaurantReservation.php">Reservation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/LittleItaly/restaurantMenu.php">Order</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron text-center bg-light">
+    <h1>Welcome to Little Italy</h1>
+        <p>Start your journey to good food here!</p>
+</div>
+
+<div class="restaurantReviews">
+    <div class="row">
+        <div class="col-sm-8">
+            <img src="/LittleItaly/images/pizza/pizza4.jpg" alt="Varying images of pizza, pasta, dessert, drink" id="review-image-change"> 
+        </div>
+        <div class="col-sm-4">
+            <h3 id="review-text-change">
+                An exquisite dining experience. Italy should be proud of the food that's served.<br><br>&#9733;&#9733;&#9733;&#9733;&#9733;<br>Toronto Newspaper
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div class="restaurantMainMenu">
+    <div class="row">
+        <div class="col-sm-3">
+            <a href="/LittleItaly/Menu/pizzaMenu.html" class="btn restaurantMainPzMenu">Pizza Menu</a>
+        </div>
+        <div class="col-sm-3">
+            <a href="/LittleItaly/Menu/pastaMenu.html" class="btn restaurantMainPaMenu">Pasta Menu</a>
+        </div>
+        <div class="col-sm-3">
+            <a href="/LittleItaly/Menu/dessertMenu.html" class="btn restaurantMainDeMenu">Dessert Menu</a>
+        </div>
+        <div class="col-sm-3">
+            <a href="/LittleItaly/Menu/drinksMenu.html" class="btn restaurantMainDrMenu">Drinks Menu</a>
+        </div>
+        
+    </div>
+</div>
+
+<div id="contactus">
+    <div class="restaurantInformation">
+        <div class="row">
+            <div class="col-sm-6">
+                <table class="restaurantMainCU">
+                    <tr>
+                    <th colspan="2" id="contactUsLink"><a href="/LittleItaly/contactUs.php" class="btn contactUsForm">Contact Us</a></th>
+                    </tr>
+                <tr><td>Email</td><td>LittleItaly@email.com</td></tr>
+                <tr><td>Call</td><td>123-456-7890</td></tr>
+                <tr><td>Address</td><td>123 Abc St, Toronto, ON</td></tr>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="restaurantMainHoO">Hours of Operation</h4>
+                <table class="restaurantMainHoO">
+                    <tr><th>Day</th><th>Hours</th></tr>
+                    <tr><td>Sunday</td><td>11 AM - 10 PM</td></tr>
+                    <tr><td>Monday</td><td>11 AM - 10 PM</td></tr>
+                    <tr><td>Tuesday</td><td>11 AM - 10 PM</td></tr>
+                    <tr><td>Wednesday</td><td>11 AM - 10 PM</td></tr>
+                    <tr><td>Thursday</td><td>11 AM - 10 PM</td></tr>
+                    <tr><td>Friday</td><td>11 AM - 10 PM</td></tr>
+                    <tr><td>Saturday</td><td>11 AM - 10 PM</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="restaurantMain">
+    <div class="footer-content">
+         <p>&copy; 2023 Little Italy</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
