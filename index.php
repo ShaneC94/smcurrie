@@ -14,6 +14,8 @@
             <a href="#projects">Projects</a>
             <a href="#about">About Me</a>
             <a href="#contact">Contact</a>
+            <a href="#resume">Resume</a>
+            <a href="https://github.com/ShaneC94/smcurrie">GitHub</a>
         </div>
     </nav>
 
@@ -24,6 +26,7 @@
             Hi, I'm Shane, a third-year software engineering student with a passion for programming.<br>
             Take a look at some of my projects below!
         </p>
+<br><br>
 
         <!-- Projects Section -->
         <section id="projects">
@@ -49,6 +52,14 @@
                     <p>A simple to-do list app for managing daily tasks, built with HTML, CSS, and JavaScript.</p>
                     <a href="/ToDoList/index.html" class="project-btn">View Project</a>
                 </div>
+                
+                <!-- Project 4: OnMyWay -->
+                <div class="project-card">
+                    <h3>OnMyWay</h3>
+                    <p>Led API integration efforts to incorporate weather data into a carpooling and commuting platform, providing real-time conditions and forecasts.</p>
+                    <a href="https://github.com/ShaneC94/OnMyWay" class="project-btn">View Project</a>
+                    <br><p>A group project for my Data Management Systems course (3700U SOFE). Awarded with Best Project Design - Fall 2024 semester.</p>
+                </div>
             </div>
         </section>
 <br><br>
@@ -62,6 +73,7 @@
                     <h3>Fantasy Football Tracker</h3>
                     <p>A fantasy football tracker for my league, developed using HTML, CSS, JavaScript, PHP, and SQL, and integrated with the Sleeper API. It displays transaction logs of roster changes and weekly matchups against the median, offering a streamlined view of league activity.</p>
                     <a href="/FFTracker/" class="project-btn">View Project</a>
+                    <br><p>Future updates will include displaying the W-L-T of each team, the weekly matchup against another team, draft results displaying players picked with which draft pick, and much more!</p>
                 </div>
             </div>
         </section>
@@ -86,12 +98,13 @@
         <section id="contact">
             <h2>Contact Me</h2>
             <div class="contact-buttons">
-                <a href="mailto:smcurrie24@gmail.com" class="email">📧 Email Me</a>
-                <a href="https://www.linkedin.com/in/shane-currie-24bb09293/" target="_blank" class="linkedin">🔗 LinkedIn</a>
+                <a href="mailto:smcurrie24@gmail.com" class="email">ðŸ“§ Email Me</a>
+                <a href="https://www.linkedin.com/in/shane-currie-24bb09293/" target="_blank" class="linkedin">ðŸ”— LinkedIn</a>
             </div>
         </section>
 <br><br>
-
+        
+        <!-- Resume Section -->
         <section id="resume">
             <h2>Download My Resume</h2>
             <p>
