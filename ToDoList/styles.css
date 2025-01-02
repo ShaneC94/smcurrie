@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9ECCC;
+    margin: 0;
+    padding: 0;
+}
+h1, p {
+    color: #0F4C5C;
+    text-align: center;
+}
+#todo-list {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+input, select, button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #0F4C5C;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #399E5A;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.low { color: green; }
+.medium { color: orange; }
+.high { color: red; }
