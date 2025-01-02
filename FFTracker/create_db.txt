@@ -1,0 +1,75 @@
+-- Table: leagues
+CREATE TABLE leagues (
+    league_id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(100),
+    total_rosters INT,
+    status VARCHAR(50)
+);
+
+-- Table: teams
+CREATE TABLE teams (
+    team_id INT AUTO_INCREMENT PRIMARY KEY,
+    league_id VARCHAR(50),
+    owner_id VARCHAR(50),
+    team_name VARCHAR(100),
+    points FLOAT,
+    FOREIGN KEY (league_id) REFERENCES leagues(league_id) ON DELETE CASCADE
+);
+
+-- Table: drafts
+CREATE TABLE drafts (
+    draft_id VARCHAR(50) PRIMARY KEY,
+    league_id VARCHAR(50),
+    status VARCHAR(50),
+    rounds INT,
+    FOREIGN KEY (league_id) REFERENCES leagues(league_id) ON DELETE CASCADE
+);
+
+-- Table: matchups
+CREATE TABLE matchups (
+    matchup_id INT AUTO_INCREMENT PRIMARY KEY,
+    league_id VARCHAR(50),
+    week INT,
+    team_id VARCHAR(50),
+    points FLOAT,
+    FOREIGN KEY (league_id) REFERENCES leagues(league_id) ON DELETE CASCADE
+);
+
+-- Table: roster_changes
+CREATE TABLE roster_changes (
+    change_id INT AUTO_INCREMENT PRIMARY KEY,
+    league_id VARCHAR(50),
+    team_id INT,
+    player_id VARCHAR(50),
+    change_type ENUM('add', 'drop'),
+    timestamp DATETIME,
+    FOREIGN KEY (league_id) REFERENCES leagues(league_id) ON DELETE CASCADE,
+    FOREIGN KEY (team_id) REFERENCES teams(team_id) ON DELETE CASCADE
+);
+
+-- Table: players (new)
+CREATE TABLE players (
+    player_id VARCHAR(50) PRIMARY KEY,
+    full_name VARCHAR(100),
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Table: draft_picks (new)
+CREATE TABLE draft_picks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    league_id VARCHAR(50),
+    draft_id VARCHAR(50),
+    team_id INT,
+    player_id VARCHAR(50),
+    pick_number INT,
+    FOREIGN KEY (league_id) REFERENCES leagues(league_id) ON DELETE CASCADE,
+    FOREIGN KEY (team_id) REFERENCES teams(team_id) ON DELETE CASCADE,
+    FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE
+);
+
+ALTER TABLE roster_changes
+ADD COLUMN week INT NOT NULL;
+
+ALTER TABLE draft_picks ADD COLUMN rounds INT NOT NULL;
