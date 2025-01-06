@@ -106,6 +106,8 @@ smcurrie/
 ├── TripPlanner/
 ├── index.php
 ├── styles.css
+├── robots.txt
+├── sitemap.xml
 └── README.md
 ```
 
@@ -115,4 +117,6 @@ smcurrie/
 - **TripPlanner/**: Road trip planning app with API integrations.
 - **index.php**: Website landing page.
 - **styles.css**: Shared styles for static pages.
+- **robots.txt**: Provides instructions to web crawlers about which pages or files they can and cannot crawl on the website.
+- **sitemap.xml**: An XML file that lists all the URLs on the site to help search engines crawl and index the website efficiently.
 - **README.md**: Project documentation.
