@@ -99,7 +99,7 @@ The server will now automatically execute the script every 30 minutes.
 ## Project Structure
 
 ```
-smcurrie-main/
+smcurrie/
 ├── FFTracker/
 ├── LittleItaly/
 ├── ToDoList/
