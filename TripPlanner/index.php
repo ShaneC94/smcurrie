@@ -28,6 +28,20 @@ error_log("Session User ID: " . print_r($_SESSION['user_id'] ?? "Not Set", true)
     <?php else: ?>
         <meta name="user_id" content="null">
     <?php endif; ?>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Trip Planner",
+      "description": "A road trip planning tool with weather API integration. Helps users avoid bad weather along routes and uses Mapbox for map visualization.",
+      "url": "https://smcurrie.com/TripPlanner/index.html",
+      "creator": {
+        "@type": "Person",
+        "name": "Shane Currie"
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
