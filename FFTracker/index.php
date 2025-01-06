@@ -74,6 +74,7 @@ if ($matchups_result && $matchups_result->num_rows > 0) {
 
 $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,14 +82,25 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Football Tracker</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Fantasy Football Tracker",
+      "description": "A fantasy football tracker integrated with the Sleeper API. Automates data synchronization and displays transaction logs, weekly scores, and other league stats.",
+      "url": "https://smcurrie.com/FFTracker/index.html",
+      "creator": {
+        "@type": "Person",
+        "name": "Shane Currie"
+      }
+    }
+    </script>
+
 </head>
 <body>
 <header>
     <h1>Fantasy Football Tracker</h1>
-    <!-- Button to refresh data by running update script -->
-    <form method="POST" action="update_sleeper_data.php">
-        <button type="submit" name="refresh">Refresh Data</button>
-    </form>
 </header>
 
 <section>
